@@ -22,14 +22,17 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "bower":"^1.8.0",
+    "grunt":"^1.0.1"
   },
   "scripts": {
     "heroku-postbuild": "npm install",
-    "start": "node server.js",
-    "build": "react-scripts build",
+    "start": "node ./www.js",
+    "build": "grunt dist",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
   },
   "eslintConfig": {
     "extends": [
