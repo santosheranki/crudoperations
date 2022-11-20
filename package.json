@@ -28,11 +28,10 @@
   },
   "scripts": {
     "heroku-postbuild": "npm install",
-    "start": "node ./www.js",
-    "build": "grunt dist",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
