@@ -7,9 +7,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exactpath="/" element={<Login/>}/>
-        <Route exactpath="/dashboard" element={<Dashboard/>}/>
-        <Route exactpath="/students" element={<Student/>}/>
+        <Route path="/" element={<Login/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/students" element={<Student/>}/>
       </Routes>
     </Router>
   );
