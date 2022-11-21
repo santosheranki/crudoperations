@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes,Route, Link} from "react-router-dom";
 import Login from './Login';
@@ -8,9 +7,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login/>}/>
-        <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/students" element={<Student/>}/>
+        <Route exactpath="/" element={<Login/>}/>
+        <Route exactpath="/dashboard" element={<Dashboard/>}/>
+        <Route exactpath="/students" element={<Student/>}/>
       </Routes>
     </Router>
   );
